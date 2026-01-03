@@ -541,7 +541,7 @@ const App: React.FC = () => {
             <div className="relative hidden lg:block">
               <div className="relative z-10 bg-white p-4 rounded-[4rem] shadow-[0_40px_120px_rgba(244,63,94,0.15)] rotate-2 border-4 border-stone-50 overflow-hidden group hover:rotate-0 transition-all duration-1000">
                 <img
-                  src="media/axia.png"
+                  src="https://masterleads.be/wp-content/uploads/2026/01/axia.png"
                   alt="Équipe AXIA Académie collaborative"
                   className="w-full h-[650px] object-cover rounded-[3.5rem] group-hover:scale-105 transition-transform duration-1000"
                 />
@@ -612,7 +612,7 @@ const App: React.FC = () => {
             <div className="relative order-2 lg:order-1">
               <div className="bg-stone-800 p-3 md:p-4 rounded-[3rem] md:rounded-[4rem] shadow-3xl -rotate-1 md:-rotate-2 relative z-10 border-4 border-stone-700 overflow-hidden group">
                 <img
-                  src="medias/axia2.png"
+                  src="https://masterleads.be/wp-content/uploads/2026/01/axia2.png"
                   alt="Interaction et apprentissage pratique"
                   className="w-full h-[400px] md:h-[500px] lg:h-[700px] object-cover rounded-[2.5rem] md:rounded-[3.5rem] group-hover:scale-110 transition-transform duration-1000"
                 />

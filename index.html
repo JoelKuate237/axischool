@@ -68,23 +68,6 @@
             transform: rotate(-1.5deg);
         }
 
-        .hand-drawn-underline {
-            position: relative;
-            z-index: 1;
-        }
-        .hand-drawn-underline::after {
-            content: "";
-            position: absolute;
-            left: 0;
-            bottom: -4px;
-            width: 100%;
-            height: 12px;
-            background: var(--creator-rose);
-            border-radius: 100%;
-            opacity: 0.25;
-            z-index: -1;
-        }
-
         .card-creator {
             background: white;
             border-radius: 2.5rem;
@@ -95,10 +78,6 @@
             box-shadow: 0 40px 80px -20px rgba(99, 102, 241, 0.12);
             transform: translateY(-12px);
             border-color: var(--creator-rose);
-        }
-
-        .organic-shape {
-            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
         }
 
         @keyframes float {
@@ -117,12 +96,6 @@
             perspective: 1000px;
             transform-style: preserve-3d;
         }
-        .animate-float-3d-reverse {
-            animation: float 8s ease-in-out infinite reverse;
-            animation-delay: -4.5s;
-            perspective: 1000px;
-            transform-style: preserve-3d;
-        }
 
         @keyframes scroll {
             0% { transform: translateX(0); }
@@ -130,6 +103,22 @@
         }
         .animate-scroll {
             animation: scroll 30s linear infinite;
+        }
+
+        /* Styles spécifiques au contenu HTML du chatbot */
+        .chatbot-html-content b {
+            color: var(--creator-rose);
+            font-weight: 600;
+        }
+        .chatbot-html-content ul {
+            list-style-type: disc;
+            margin-left: 1.25rem;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .chatbot-html-content a {
+            color: var(--creator-indigo);
+            text-decoration: underline;
         }
     </style>
 <script type="importmap">
@@ -148,7 +137,6 @@
 </head>
 <body>
     <div id="root"></div>
-    <!-- Point d'entrée de l'application -->
     <script type="module" src="./index.tsx"></script>
 <script type="module" src="/index.tsx"></script>
 </body>
